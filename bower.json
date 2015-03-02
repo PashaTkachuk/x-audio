@@ -13,7 +13,7 @@
   ],
   "main": "x-audio.html",
   "license": "MIT",
-  "homepage": "https://github.com/<USERNAME>/x-audio/",
+  "homepage": "https://github.com/PashaTkachuk/x-audio/",
   "ignore": [
     "/.*",
     "/tests/"

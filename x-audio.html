@@ -11,8 +11,22 @@
 <link rel="import" href="../core-icons/av-icons.html">
 <link rel="import" href="../paper-slider/paper-slider.html">
 
+<!--
+Material design audio element
+
+##### Example
+
+    <x-audio src="example.mp3" name="Example"></x-audio>
+
+@element x-audio
+@blurb Material design audio element
+@status alpha
+@homepage http://pashatkachuk.github.io/x-audio
+-->
 <polymer-element name="x-audio" attributes="src name disabled">
+
   <template>
+
     <link rel="stylesheet" href="x-audio.css">
 
     <div id="container" horizontal layout>
@@ -34,9 +48,36 @@
 
   </template>  
   <script>
+
   Polymer({
-  created: function () {
-    this.disabled = false;
+    /**
+   * The `src` attribute determines source of audio file
+   *
+   * @attribute src
+   * @type string
+   * @default ''
+   */
+  src: '',
+
+    /**
+   * The `name` attribute determines name of audio file
+   *
+   * @attribute name
+   * @type string
+   * @default ''
+   */
+  name: '',
+
+  /**
+   * The `disabled` attribute determines whether the element is available
+   *
+   * @attribute disabled
+   * @type bool
+   * @default false
+   */
+
+  disabled: false,
+  ready: function () {
     if (!!this.src) this.init(this.src);
   },
   init: function (src) {

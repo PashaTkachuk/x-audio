@@ -1,3 +1,13 @@
+/*
+ * @license
+ * Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+ * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+ * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+ * Code distributed by Google as part of the polymer project is also
+ * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+ */
+
 :host {
 	width: 100%;
 	min-width: 200px;
@@ -5,19 +15,18 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
             box-sizing: border-box;
-	padding: 5px;
-	color: #FFF;
+	padding: 5px;	
 	position: relative;
-	color: #FF4081;
-	min-width: 200px;
+	color: #FF4081;	
 }
 .disabled {
 	color: #ccc;
 }
 
 core-icon {
-	color: #FF4081;
+	color: #FF4081 !important;
 }
+
 .audio {
 	width: 80%;
 	margin-right: 30px;
@@ -37,10 +46,10 @@ core-icon {
 }
 
 #playButton {
+	color: #FF4081;
 	width: 40px;
 	height: 40px;
 	margin-right: 10px;
-	color: #000;
 }
 
 #playButton:hover {
@@ -105,4 +114,8 @@ paper-slider::shadow #sliderKnob {
 
 paper-slider::shadow #sliderBar::shadow #progressContainer {
   background-color: #D1C4E9;
+}
+
+core-icon#playButton {
+	color: #fff;
 }
